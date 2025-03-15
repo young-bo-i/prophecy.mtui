@@ -1,0 +1,9 @@
+version: '3'
+services:
+  frontend:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - VUE_APP_API_URL=http://10.0.0.112:8000
+    restart: always 
