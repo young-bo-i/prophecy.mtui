@@ -1,24 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import UserForm from './components/UserForm.vue'
 </script>
 
 <template>
   <div class="container">
-    <h1>Hello World</h1>
+    <UserForm />
   </div>
 </template>
 
 <style scoped>
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-h1 {
-  font-size: 48px;
-  color: #2c3e50;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
 }
 </style>
